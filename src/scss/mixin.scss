@@ -1,0 +1,24 @@
+@mixin reg {
+  font-family: 'MerriweatherRegular', sans-serif;
+  font-weight: 400;
+}
+
+@mixin ital {
+  font-family: 'MerriweatherItalic', sans-serif;
+  font-weight: 400;
+}
+
+@mixin light {
+  font-family: 'MerriweatherLight', sans-serif;
+  font-weight: 300;
+}
+
+@mixin lightItal {
+  font-family: 'MerriweatherLightItalic', sans-serif;
+  font-weight: 300;
+}
+
+@mixin bold {
+  font-family: 'MerriweatherBold', sans-serif;
+  font-weight: 700;
+}
