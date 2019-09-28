@@ -7,8 +7,36 @@
     <link rel="stylesheet" href="build/css/all.css">
 </head>
 <body>
+        <object type="image/svg+xml" data="sprite.svg">
+            Your browser does not support SVG
+         </object>
 
-<h1>Hello html</h1>
+<!--  HEADER  -->
+<div class="container">
+    <header>
+        <div class="header__left">
+            <img class="header__logo" 
+             src="src/img/logo.png" alt="Логотип"
+             srcset="src/img/logo.png 1x,
+                    src/img/logo-2x.png 2x" />
+                    <p class="header__slogan">assosiates<br>studio<br>design</p>
+        </div>
+        
+    
+        <ul class="header__socials socials">
+            <li class="social__element">
+                <a href="#" class="social__link" aria-label="Facebook">
+                <svg class="social__facebook">
+                    <use xlink:href="src/img/#fb"></use>
+                </svg>
+            </a></li>
+        </ul>
+
+       
+        <div class="header__right"></div>
+    </header>
+</div>
+
 
 <script src="build/js/all.js"></script>
 </body>

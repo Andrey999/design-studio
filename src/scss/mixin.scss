@@ -1,24 +1,29 @@
 @mixin reg {
-  font-family: 'MerriweatherRegular', sans-serif;
+  font-family: 'robotocondensed-regular', sans-serif;
   font-weight: 400;
 }
 
 @mixin ital {
-  font-family: 'MerriweatherItalic', sans-serif;
+  font-family: 'robotocondensed-italic', sans-serif;
   font-weight: 400;
 }
 
 @mixin light {
-  font-family: 'MerriweatherLight', sans-serif;
+  font-family: 'robotocondensed-light', sans-serif;
   font-weight: 300;
 }
 
 @mixin lightItal {
-  font-family: 'MerriweatherLightItalic', sans-serif;
+  font-family: 'robotocondensed-lightitalic', sans-serif;
   font-weight: 300;
 }
 
 @mixin bold {
-  font-family: 'MerriweatherBold', sans-serif;
+  font-family: 'robotocondensed-bold', sans-serif;
+  font-weight: 700;
+}
+
+@mixin boldItal {
+  font-family: 'robotocondensed-bolditalic', sans-serif;
   font-weight: 700;
 }

@@ -1,34 +1,35 @@
-      @font-face {
-  font-family: "MerriweatherBold";
-  src : url("../fonts/MerriweatherBold/MerriweatherBold.eot");
-  src : url("../fonts/MerriweatherBold/MerriweatherBold.ttf");
-  src : url("../fonts/MerriweatherBold/MerriweatherBold.woff");
+@font-face {
+   font-family: "robotocondensed-bold";
+   src: url("../fonts/robotocondensed-bold-webfont.woff");
+   src: url("../fonts/robotocondensed-bold-webfont.woff2");
 }
 
 @font-face {
-  font-family: "MerriweatherItalic";
-  src : url("../fonts/MerriweatherItalic/MerriweatherItalic.eot");
-  src : url("../fonts/MerriweatherItalic/MerriweatherItalic.ttf");
-  src : url("../fonts/MerriweatherItalic/MerriweatherItalic.woff");
+  font-family: "robotocondensed-bolditalic";
+  src: url("../fonts/robotocondensed-bolditalic-webfont.woff");
+  src: url("../fonts/robotocondensed-bolditalic-webfont.woff2");
 }
 
 @font-face {
-  font-family: "MerriweatherLight";
-  src : url("../fonts/MerriweatherLight/MerriweatherLight.eot");
-  src : url("../fonts/MerriweatherLight/MerriweatherLight.ttf");
-  src : url("../fonts/MerriweatherLight/MerriweatherLight.woff");
+  font-family: "robotocondensed-italic";
+  src: url("../fonts/robotocondensed-italic-webfont.woff");
+  src: url("../fonts/robotocondensed-italic-webfont.woff2");
 }
 
 @font-face {
-  font-family: "MerriweatherLightItalic";
-  src : url("../fonts/MerriweatherLightItalic/MerriweatherLightItalic.eot");
-  src : url("../fonts/MerriweatherLightItalic/MerriweatherLightItalic.ttf");
-  src : url("../fonts/MerriweatherLightItalic/MerriweatherLightItalic.woff");
+  font-family: "robotocondensed-light";
+  src: url("../fonts/robotocondensed-light-webfont.woff");
+  src: url("../fonts/robotocondensed-light-webfont.woff2");
 }
 
 @font-face {
-  font-family: "MerriweatherRegular";
-  src : url("../fonts/MerriweatherRegular/MerriweatherRegular.eot");
-  src : url("../fonts/MerriweatherRegular/MerriweatherRegular.ttf");
-  src : url("../fonts/MerriweatherRegular/MerriweatherRegular.woff");
+  font-family: "robotocondensed-lightitalic";
+  src: url("../fonts/robotocondensed-lightitalic-webfont.woff");
+  src: url("../fonts/robotocondensed-lightitalic-webfont.woff2");
+}
+
+@font-face {
+  font-family: "robotocondensed-regular";
+  src: url("../fonts/robotocondensed-regular-webfont.woff");
+  src: url("../fonts/robotocondensed-regular-webfont.woff2");
 }
