@@ -7,33 +7,78 @@
     <link rel="stylesheet" href="build/css/all.css">
 </head>
 <body>
-        <object type="image/svg+xml" data="sprite.svg">
-            Your browser does not support SVG
-         </object>
 
 <!--  HEADER  -->
 <div class="container">
-    <header>
+    <header class="header">
         <div class="header__left">
             <img class="header__logo" 
              src="src/img/logo.png" alt="Логотип"
              srcset="src/img/logo.png 1x,
                     src/img/logo-2x.png 2x" />
                     <p class="header__slogan">assosiates<br>studio<br>design</p>
-        </div>
-        
-    
-        <ul class="header__socials socials">
-            <li class="social__element">
-                <a href="#" class="social__link" aria-label="Facebook">
-                <svg class="social__facebook">
-                    <use xlink:href="src/img/#fb"></use>
-                </svg>
-            </a></li>
-        </ul>
 
-       
-        <div class="header__right"></div>
+        <!-- social -- icons  -->
+        <ul class="header__social social">
+          <!-- facebook -->
+          <li class="social__element">
+              <object type="image/svg+xml" data="src/img/fb.svg">
+                  Your browser does not support SVG
+              </object>
+              <a href="#" class="social__link" aria-label="Facebook">
+                <svg class="social__facebook">
+                  <use xlink:href="src/img/#fb"></use>
+                </svg>
+              </a>
+          </li>
+
+            <!-- twitter -->
+            <li class="social__element">
+                  <object type="image/svg+xml" data="src/img/twitter.svg">
+                      Your browser does not support SVG
+                  </object>
+                  <a href="#" class="social__link" aria-label="Twitter">
+                    <svg class="social__twitter">
+                      <use xlink:href="src/img/#twitter"></use>
+                    </svg>
+                  </a>
+              </li>
+
+                <!-- linkedIn -->
+          <li class="social__element">
+                  <object type="image/svg+xml" data="src/img/linked.svg">
+                      Your browser does not support SVG
+                  </object>
+                  <a href="#" class="social__link" aria-label="LinkedIn">
+                    <svg class="social__linked">
+                      <use xlink:href="src/img/#linked"></use>
+                    </svg>
+                  </a>
+              </li>
+
+                <!-- google plus -->
+          <li class="social__element">
+                  <object type="image/svg+xml" data="src/img/google.svg">
+                      Your browser does not support SVG
+                  </object>
+                  <a href="#" class="social__link" aria-label="Google">
+                    <svg class="social__google">
+                      <use xlink:href="src/img/#google"></use>
+                    </svg>
+                  </a>
+              </li>
+      </ul> <!-- .socials -->      
+
+      </div> <!-- .header__left -->
+        
+       <!--  HEADER  RIGHT  CONTENT   -->
+        <div class="header__right">
+            <p class="header__adress">90802 California<br>Long Beach<br>PO Box 69789<br>300 East Ocean<br>Boulevard</p>
+            <p class="header__contacts">
+                <a href="tel:+6493456758" class="header__tel">+64 9 3456758</a><br>
+                <a href="mailto:info@dsgn-studio.com" class="header__email">info@dsgn-studio.com</a>
+            </p>
+        </div>
     </header>
 </div>
 

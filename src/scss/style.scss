@@ -1,13 +1,12 @@
 @import "vars.scss";
 @import "fonts.scss";
 @import "mixin";
-//@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
-html, body {
-  overflow-x: hidden;
-}
+@import "header";
 
 body {
+  overflow-x: hidden;
+  @include reg;
   font-size: 16px;
   box-sizing: border-box;
 }
@@ -30,17 +29,12 @@ ul {
 }
 
 .container {
-  width: 1200px;  //85%
-  max-width: 1200px;
+  // width: 1200px;  //85%
+  // max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
-  //margin: 0 7%;
+  // padding: 0 20px;
   position: relative;
+  background: $primaryColor;
 }
-
-//  header
-.header {}
-
-
 
 @import "./media.scss";
