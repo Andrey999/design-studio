@@ -1,5 +1,56 @@
 @import 'vars';
 
+.menu {
+    position: absolute;
+    right: 11%;
+    top: 50px;
+
+    // NAVIGATION  
+    &__list {
+        background: $hoverTextColor;
+        align-items: center;
+        flex-wrap: wrap;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;  
+        min-width: 725px;
+        padding-left: 25px;
+        padding-right: 119px;
+        display: none;
+        z-index: -9999;
+    }
+
+    &__list--active {
+        display: flex;
+        z-index: 1;
+        animation: .5s menu
+    }
+
+    &__link {
+        font-size: 14px;
+        color: $white;
+        text-transform: uppercase;
+        line-height: 1.786;
+        padding: 30px;
+        transition: color .5s;
+
+        &:hover {
+            color: $black;
+        }
+    }
+}
+
+@keyframes menu {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1; 
+    }
+}
+
+///////////////// MENU BUTTON ///////////////////
 .hamburger {
     background: none;
     display: block;
@@ -17,7 +68,7 @@
 
             &::after,
             &::before {
-                background-color: $activeColor;    
+                background-color: $activeColor;   
             }
         }
     }
@@ -51,23 +102,42 @@
     }
 }
 
-.menu__hamburger {
+.hamburger__menu {
     width: 119px;
     height: 114px;
-    position: absolute;
-    right: 100px;
-    top: 50px;
     outline: none;
+    position: relative;
+    z-index: 100;
 }
 
-.menu {
-}
-.menu__list {
-}
-.menu__element {
-}
-.menu__link {
-}
+.hamburger--active {
+    z-index: 1;
+    border-color: $activeColor;
 
-.hamburger__element {
+    &:hover,
+    &:active {
+        border-color: $activeColor;
+
+        .hamburger__element {
+            background-color: $primaryColor;
+
+            &::after,
+            &::before {
+                background-color: $primaryColor;
+            }
+        }
+    }
+
+    .hamburger__element {
+        transition: transform .5s;
+        transform: rotate(45deg);
+
+        &::after {
+            transform: rotate(-90deg);
+        }
+
+        &::before {
+            display: none;
+        }
+    }
 }
