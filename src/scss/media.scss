@@ -6,14 +6,51 @@
 
 
 /*   less  992px     */
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+    // header
+    .header__left {
+        grid-column: span 9;
+    }
+
+    .header__right {
+        grid-column: span 7;
+    }
+}
 
 
 /*   less  768px     */
 @media screen and (max-width: 768px) {}
 
 /*   less  600px     */
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 600px) {
+    // header
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .header__left, 
+    .header__right {
+        grid-column: span 1;
+    }
+
+    .header__adress,
+    .header__contacts {
+        position: static;
+    }
+
+    .header__adress {
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .header__contacts {
+        margin-left: 35%;
+        margin-top: 20%;
+        margin-bottom: 20%;
+    }
+
+}
 
 
 /*   less  479px     */
