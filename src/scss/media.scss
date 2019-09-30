@@ -1,5 +1,16 @@
-/*   less  1200px     */
-@media screen and (max-width: 1800px) {}
+@import 'mixin';
+
+/*   less  1500px     */
+@media screen and (min-width: 1500px) {
+    .header__slogan {
+        @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500);
+    }
+
+    .header__adress,
+    .header__contacts {
+        @include dynamicText(81%, 26, 13, 1500px, 3000, 1500);
+    }
+}
 
 /*   less  1200px     */
 @media screen and (max-width: 1200px) {}

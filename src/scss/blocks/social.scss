@@ -1,0 +1,38 @@
+//  social  icons
+.header__social {
+    margin: 60px 0 15px 15px;
+}
+
+.social {
+    display: flex;
+    list-style-type: none;
+    align-items: flex-end;
+
+    &__element {
+        margin: 0 6px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__facebook {
+        width: 10px;
+        height: 22px;
+    }
+
+    &__twitter {
+        width: 26px;
+        height: 21px;
+    }
+
+    &__linked {
+        width: 24px;
+        height: 23px;
+    }
+
+    &__google {
+        width: 19px;
+        height: 19px;
+    }
+}

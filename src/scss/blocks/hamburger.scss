@@ -1,0 +1,73 @@
+@import 'vars';
+
+.hamburger {
+    background: none;
+    display: block;
+    cursor: pointer;
+    border: 3px solid $primaryColor;
+    transition: border-color .5s; 
+
+    &:hover, 
+    &:active, 
+    &:focus {
+        border-color: $activeColor;
+
+        .hamburger__element {
+            background-color: $activeColor;
+
+            &::after,
+            &::before {
+                background-color: $activeColor;    
+            }
+        }
+    }
+
+    &__element {
+        width: 40px;
+        height: 3px;
+        background-color: $primaryColor;
+        display: block;
+        margin: 0 auto;
+        transition: background-color .5s; 
+
+        &::after {
+            transform: translateY(4px);
+        }
+
+        &::before {
+            transform: translateY(-7px);
+        }
+
+        &::after,
+        &::before {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            margin: 0 auto;
+            background-color: $primaryColor;
+            transition: background-color .5s;
+        }
+    }
+}
+
+.menu__hamburger {
+    width: 119px;
+    height: 114px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    outline: none;
+}
+
+.menu {
+}
+.menu__list {
+}
+.menu__element {
+}
+.menu__link {
+}
+
+.hamburger__element {
+}
