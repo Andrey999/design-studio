@@ -1,8 +1,15 @@
 @import 'vars';
 
-.list {
+.projects__list {
+    margin-top: 36.5%;
+    margin-left: calc(27.9% - 25px);
+    margin-bottom: 12.9%;
+}
 
+.list {
     &__links {
+        position: relative;
+        z-index: 1;
         color: $white;
         font-size: 13px;
         text-transform: uppercase;
