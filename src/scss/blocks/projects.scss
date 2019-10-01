@@ -1,0 +1,166 @@
+@import 'vars';
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    //  first element
+    &__element--one {
+        background-color: $hoverTextColor;
+        grid-column: span 5;
+        grid-row: span 2;
+
+        .projects__title {
+            font-size: 48px;
+            font-family: ;
+            line-height: 1;
+            text-transform: uppercase;
+            color: $white;
+        }
+    }
+
+    //  two element
+    &__element--two {
+        background-color: $white;
+        background-image: url(../img/image2.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        grid-column: span 6;
+        grid-row: span 2;
+    }
+
+    //  three element
+    &__element--three {
+        background-color: $primaryColor;
+        background-image: url(../img/image3.png);
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: cover;
+        grid-column: span 5;
+        grid-row: span 1;
+    }
+
+    //  four element
+    &__element--four {
+        background-color: #f7f7f3;
+        background-image: url(../img/image4.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        grid-column: span 5;
+        grid-row: span 2;
+    }
+
+    //  five element
+    &__element--five {
+        background-image: url(../img/image5.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        grid-column: span 3;
+        grid-row: span 2;
+    }
+
+    //  six element
+    &__element--six {
+        background-color: #eaeaea;
+        background-image: url(../img/image6.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+        grid-column: span 8;
+        grid-row: span 2;
+    }
+
+    //  seven element
+    &__element--seven {
+        background-color: $white;
+        background-image: url(../img/image7.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: 100%;
+        grid-column: span 5;
+        grid-row: span 1;
+    }
+
+    //  eight element
+    &__element--eight {
+        background-color: #fcfcfc;
+        background-image: url(../img/image8.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        grid-column: span 8;
+        grid-row: span 1;
+    }
+
+    //  nine element
+    &__element--nine {
+         background-color: #cecece;
+        background-image: url(../img/image9.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+    //  ten element
+    &__element--ten {
+        background-color: $hoverTextColor;
+        grid-column: span 5;
+        grid-row: span 1;
+    }
+
+    &__name {
+        @include light;
+        font-size: 24px;
+        line-height: 1;
+        color: $colorText;
+        margin-bottom: 10px;
+    }
+
+    &__description {    
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 1;
+        @include light;
+
+        b {
+             @include bold;
+        }
+    }
+
+    &__counter {
+        max-width: 165px;
+        text-align: center;
+    }
+
+    &__view {
+        font-size: 18px;
+        @include light;
+        text-transform: uppercase;
+        line-height: 1;
+        color: $colorText;
+        display: inline-block;
+        background: url(../img/arrow-view.svg) left center no-repeat;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        span {
+            border-bottom: 1px solid transparent;
+            transition: border-color .5s;
+        }
+
+        &:hover {
+            span {
+                border-color: $colorText;
+            }
+        }
+    }
+
+}
+
+
+

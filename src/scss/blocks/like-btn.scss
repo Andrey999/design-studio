@@ -1,0 +1,30 @@
+@import 'vars';
+
+.like__btn {
+    background: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0;
+
+    svg {
+        width: 24px;
+        height: 22px;
+        transition: fill .5s;
+    }
+
+    &:hover {
+        svg {
+            fill: red;
+        }
+    }
+}
+
+.like__counts {
+        font-size: 11px;
+        @include light;
+        color: $colorText;
+        line-height: 1;
+        display: block;
+        margin-top: 5px;
+    } 

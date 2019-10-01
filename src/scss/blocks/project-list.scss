@@ -1,0 +1,18 @@
+@import 'vars';
+
+.list {
+
+    &__links {
+        color: $white;
+        font-size: 13px;
+        text-transform: uppercase;
+        line-height: 1.077;
+        padding-left: 25px;
+        transition: color .5s;
+
+        &:hover {
+            color: $black;
+            background: url(../img/arrow.svg) left center no-repeat;
+        }
+    }
+}

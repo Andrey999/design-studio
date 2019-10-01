@@ -61,14 +61,14 @@
     &:hover, 
     &:active, 
     &:focus {
-        border-color: $activeColor;
+        border-color: $hoverTextColor;
 
         .hamburger__element {
-            background-color: $activeColor;
+            background-color: $hoverTextColor;
 
             &::after,
             &::before {
-                background-color: $activeColor;   
+                background-color: $hoverTextColor;   
             }
         }
     }
@@ -112,11 +112,11 @@
 
 .hamburger--active {
     z-index: 1;
-    border-color: $activeColor;
+    border-color: $hoverTextColor;
 
     &:hover,
     &:active {
-        border-color: $activeColor;
+        border-color: $hoverTextColor;
 
         .hamburger__element {
             background-color: $primaryColor;
