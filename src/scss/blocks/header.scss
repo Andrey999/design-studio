@@ -14,6 +14,10 @@
     background-image: url(../img/image1.png);
     background-repeat: no-repeat;
     background-size: 100%;
+
+    @media screen and (min-resolution: 2dppx), (min-width: 1500px) {
+        background-image: url(../img/image1-2x.png);
+    }
 }
 
 .header__logo {

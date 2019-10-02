@@ -1,5 +1,43 @@
 @import 'mixin';
 
+//   adaptive  image
+@media screen and (min-resolution: 2dppx), (min-width: 1501px) {
+
+    // block  projects
+    .projects__element--two {
+        background-image: url(../img/image2-2x.png);
+    }
+
+    .projects__element--three {
+        background-image: url(../img/image3-2x.png);
+    }
+
+     .projects__element--four {
+        background-image: url(../img/image4-2x.png);
+    }
+
+     .projects__element--five {
+        background-image: url(../img/image5-2x.png);
+    }
+
+     .projects__element--six {
+        background-image: url(../img/image6-2x.png);
+    }
+
+     .projects__element--seven {
+        background-image: url(../img/image7-2x.png);
+    }
+
+     .projects__element--eight {
+        background-image: url(../img/image8-2x.png);
+    }
+
+     .projects__element--nine {
+        background-image: url(../img/image9-2x.png);
+    }
+}
+
+
 /*   less  1500px     */
 @media screen and (min-width: 1500px) {
     .header__slogan {
@@ -19,17 +57,55 @@
     .menu__link {
         @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
     }
+
+    //  projects block
+    .list__links {
+        @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
+    }
+
+    .projects__name {
+        @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
+
+    .projects__element--one .projects__title {
+        @include dynamicText(300%, 96, 48, 1500px, 3000, 1500);
+    }
+
+    .projects__counter,
+    .projects__element--eight .projects__counter {
+        max-width: 260px;
+    }
+
+    .projects__view {
+        @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500);
+    }
+
+    .like__counts {
+        @include dynamicText(68.75%, 22, 11, 1500px, 3000, 1500);
+    }
+
+    .projects__element--ten .projects__subtitle {
+         @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
 }
 
+
 /*   less  1200px     */
-@media screen and (max-width: 1200px) {}
+@media screen and (max-width: 1300px) {
+    .projects__element--one .projects__title {
+        font-size: 38px;
+    }
+}
 
 
 /*   less  992px     */
 @media screen and (max-width: 992px) {
+
     // header
     .header__left {
         grid-column: span 9;
+        padding-left: 3%;
+        background-position: 50px 0;
     }
 
     .header__right {
@@ -44,6 +120,88 @@
 
     .menu__list {
         min-width: 550px;
+    }
+
+    //  project  block
+    .projects__element--one {
+        grid-column: span 7;
+    }
+
+    .projects__list {
+        margin-left: calc(20% - 25px);
+    }
+
+    .projects__element--one .projects__title {
+        font-size: 30px;
+    }
+
+    .projects__element--two {
+        grid-column: span 9;
+    }
+
+    .projects__element--three {
+        grid-column: span 9;
+        grid-row: span 2;
+        background-size: 100% 100%;
+    }
+
+    .projects__element--four {
+        grid-column: span 7;
+        grid-row: span 2;
+    }
+
+    .projects__element--four .projects__counter {
+        display: block;
+        margin-top: 5px;
+    }
+
+    .projects__element--four .projects__like {
+        margin-top: 15px;
+    }
+
+     .projects__element--five {
+        grid-column: span 5;
+    }
+
+    .projects__element--six {
+        grid-column: span 11;
+    }
+
+     .projects__element--seven {
+        grid-column: span 7;
+        background-size: contain;   
+        background-position: 0 15px;
+    }
+
+     .projects__element--eight {
+        grid-column: span 9;
+        background-size: contain;
+        background-position: 0 10px;
+    }
+
+    .projects__element--eight .projects__counter {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .projects__element--eight .projects__like {
+        margin-top: 11%;
+    }
+
+    .projects__element--nine {
+        grid-column: span 9;
+    }
+
+    .projects__element--nine .projects__info {
+        margin-left: 55%;
+    }
+
+    .projects__element--nine .projects__counter {
+        margin-left: 50%;
+    }
+
+    .projects__element--ten {
+        grid-column: span 7;
     }
 }
 
@@ -60,6 +218,16 @@
     .hamburger__menu {
         width: 70px;
         height: 70px;
+        border: 3px solid $white;
+    }
+
+     .hamburger__element {
+        background-color: $white;
+
+        &::after,
+        &::before {
+            background-color: $white;
+        }
     }
 
     .menu__list {
@@ -74,6 +242,66 @@
         display: block;
         padding: 7px 80px 7px 0;
     }
+
+    // project  block
+    .projects__element--two .projects__info {
+        margin-left: 7%;
+        margin-top: 7%;
+    }
+
+    .projects__counter {
+        margin-left: 1%;
+        margin-bottom: 3%;
+    }
+
+    .projects__element--three {
+        background-size: 108% 100%;
+    }
+
+    .projects__element--four {
+        display: block;
+    }
+
+    .projects__element--four .projects__info {
+        margin-left: 26.9%;
+        margin-right: 4.3%;
+        margin-bottom: 7.5%;
+    }
+
+    .projects__element--six {
+        background-position: -75px 15px;
+    }
+
+    .projects__element--six .projects__info {
+        margin-left: 30%;
+    }
+
+    .projects__element--seven .projects__info {
+        margin-left: 56%;
+    }
+
+    .projects__element--seven .projects__counter {
+        margin-left: 45%;
+        width: 64%;
+    }
+
+    .projects__element--eight {
+        display: block;
+    }
+
+    .projects__element--eight .projects__info {
+        margin-left: 30%;
+        margin-top: 5%;
+    }
+
+    .projects__element--eight .projects__counter {
+        margin-left: 16%;
+        margin-top: 15px;
+    }
+
+    .projects__element--eight .projects__like {
+        margin-top: 5%; 
+    }
 }
 
 /*   less  600px     */
@@ -87,6 +315,11 @@
     .header__left, 
     .header__right {
         grid-column: span 1;
+        background-position: 42px 104px;
+    }
+
+    .header__social {
+        margin: 60px 0 15px 0px;
     }
 
     .header__adress,
@@ -105,6 +338,86 @@
         margin-bottom: 20%;
     }
 
+    //  block  project
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .projects__element--one, .projects__element--two, .projects__element--three,
+    .projects__element--four, .projects__element--five, .projects__element--six,
+    .projects__element--seven, .projects__element--eight, .projects__element--nine,
+    .projects__element--ten {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .projects__counter {
+        margin-bottom: 12%;
+    }
+
+    .projects__element--three {
+        background-size: 106% 100%;
+    }
+
+    .projects__element--three .projects__counter {
+        margin-bottom: 12%;
+    }
+
+    .projects__element--three .projects__counter {
+        margin-left: 4%;
+    }
+
+    .projects__element--five .projects__counter {
+        margin-bottom: 45%;
+    }
+
+    .projects__element--six {
+        height: 380px;
+        background-position: -98px 52px;
+    }
+
+    .projects__element--six .projects__info {
+        margin-left: 28%;
+    }
+
+    .projects__element--six .projects__counter {
+        margin-left: 0.5%;
+    }
+
+    .projects__element--seven {
+        background-size: 80% 65%;
+    }    
+
+    .projects__element--seven .projects__info {
+        margin-left: 50%;
+    }
+
+    .projects__element--seven .projects__counter {
+        margin-bottom: 16%;
+    }
+
+    .projects__element--eight {
+        background-position: 0 40px;
+        padding-top: 34%;
+    }
+
+    .projects__element--eight .projects__info {
+        margin-left: 35%;
+    }
+
+    .projects__element--eight .projects__counter {
+        margin-left: 27%;
+        margin-bottom: 5%;
+    }
+
+    .projects__element--ten .projects__subtitle {
+        margin-left: 16.5%;
+    }
+    
+    .projects__element--ten .projects__list {
+        margin-left: calc(17.5% - 25px);
+    }
 }
 
 
