@@ -101,4 +101,28 @@
         }
     }
 
+    //  studio  staff
+    &__staff {
+        padding: 12.9% 6.4% 19.3% 35.4%;
+
+        &-title {
+            @include bold;
+            color: $colorText;
+            font-size: 14px;
+            line-height: 1;
+            text-transform: uppercase;
+             margin: 0 0 7.4% 0;
+        }
+
+        &-text {
+            font-size: 14px;
+            line-height: 1;
+            @include light;
+            margin: 7.4% 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
 }

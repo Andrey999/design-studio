@@ -19,20 +19,41 @@
     &__facebook {
         width: 10px;
         height: 22px;
+
+        &-mini {
+            width: 6px;
+            height: 13px;
+            fill: red;
+        }
     }
 
     &__twitter {
         width: 26px;
         height: 21px;
+
+        &-mini {
+            width: 13px;
+            height: 10px;  
+        }
     }
 
     &__linked {
         width: 24px;
         height: 23px;
+
+        &-mini {
+            width: 13px;
+            height: 12px;
+        }
     }
 
     &__google {
         width: 19px;
         height: 19px;
+
+        &-mini {
+            width: 14px;
+            height: 13px;
+        }
     }
 }
