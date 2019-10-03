@@ -124,6 +124,28 @@
     .persons__cv {
          @include dynamicText(75%, 28, 14, 1500px, 3000, 1500);
     }
+
+
+    //////////////////// section  news  ////////////////////////////
+    .news__title {
+        @include dynamicText(300%, 96, 48, 1500px, 3000, 1500);
+    }
+
+    .news__text {
+        @include dynamicText(150%, 40, 20, 1500px, 3000, 1500);
+    }
+
+    .news__date {
+        @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
+
+    .news__description {
+        @include dynamicText(75%, 28, 14, 1500px, 3000, 1500);
+    }
+
+    .news__link {
+        @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
 }
 
 
@@ -134,7 +156,8 @@
     }
 
     .studio__right,
-    .studio__person {
+    .studio__person,
+    .news__right {
         padding-right: 2%;
     }
 
@@ -277,6 +300,15 @@
     .studio__staff {
         padding-left: 2%;
         padding-right: 3%;
+    }
+
+    //////////// section  news  //////////////
+    .news__title {
+        font-size: 35px;
+    }
+
+    .news__text {
+        font-size: 15px;
     }
 }
 
@@ -552,6 +584,43 @@
     .persons__item {
         width: auto;
         margin-right: 0;
+    }
+
+      ////////////////  section news /////////////////////////
+    .news {
+        grid-template-columns: 1fr;
+    }
+
+    .news__left, .news__right {
+        grid-column: span 1;
+    }
+
+    .news__left {
+        margin-bottom: 25px;
+    }
+
+    .news__right {
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .news__title {
+        margin: 4.3% 0 20.4% 10.2%;
+    }
+
+    .news__list {
+        flex-direction: column;
+    }
+
+    .news__element {
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .news__text {
+        font-size: 20px;
+        min-height: auto;
     }
     
 }

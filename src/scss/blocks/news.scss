@@ -3,25 +3,103 @@
 .news {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
-}
 
-.news__left {
-    grid-column: span 5;
-    background: $bgNews;
-    position: relative;
-    padding-top: 10.7%;
+    //  news  left
+    &__left {
+        grid-column: span 5;
+        background: $bgNews;
+        position: relative;
+        padding-top: 10.7%;
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1px" /></svg>');
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1px" /></svg>');
+        }
     }
-}
 
-.news__right {
-    grid-column: span 11;
+    &__title {
+        font-size: 48px;
+        color: $white;
+        line-height: 1;
+        text-transform: uppercase;
+        margin: 62.3% 0 35.4% 46.2%;
+    }
+
+    //  news  right
+    &__right {
+        grid-column: span 11;
+        display: flex;
+        align-items: center;
+        padding-left: 9.6%;
+        padding-right: 15.9%;
+    }
+
+    &__list {
+        display: flex;
+    }   
+
+    &__element {
+        width: 48%;
+
+        &:first-child {
+            margin-right: 4%;
+        }
+    }   
+
+    &__text {
+        font-size: 20px;
+        text-transform: uppercase;
+        line-height: 1;
+        @include bold;
+        color: $colorText;
+        min-height: 38px;
+    }
+
+    &__date {
+        display: block;
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        margin-top: 1%;
+        margin-bottom: 4.5%;
+        @include light;
+    }
+
+    &__image {
+        display: block;
+        width: 100%;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 1.167;
+        text-align: justify;
+        @include light;
+        letter-spacing: .3px;
+        color: $colorText;
+        margin-top: 4.5%;
+        margin-bottom: 2%;
+    }
+
+    &__href {
+        text-align: right;
+        margin: auto 0 0 0;
+    }
+
+    &__link {
+        color: red;
+        font-size: 12px;
+        text-transform: uppercase;
+        line-height: 1.167;
+        transition: all .5s;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
