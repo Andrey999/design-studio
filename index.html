@@ -112,7 +112,7 @@
     </nav> <!-- .menu -->
 </div>
 
-<!--  PROJECTS  BLOCK   -->
+<!--  PROJECTS  SECTION   -->
 <div class="container">
   <section class="projects">
 
@@ -389,7 +389,7 @@
   </section>
 </div>
 
-<!--   BLOCK  STUDIO   -->
+<!--  STUDIO  SECTION   -->
 <div class="container">
   <section class="studio">
     <!--  studio  left  -->
@@ -418,7 +418,7 @@
       <div class="studio__description">
         <picture>
           <source media="(min-width: 1500px)"
-            srcset="src/img/studio-img-2x.jpg">
+                  srcset="src/img/studio-img-2x.jpg">
             <img class="studio__image"
                  src="src/img/studio-img.jpg" alt="Фотография студии"
                  srcset="src/img/studio-img.jpg 1x,
@@ -436,9 +436,11 @@
     <!-- studio  staff -->
     <div class="studio__staff">
       <p class="studio__staff-title">Staff</p>
-      <p class="studio__staff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestias necessitatibus corporis voluptate ipsum! Ex, nisi numquam impedit debitis ipsa distinctio sapiente nesciunt. Neque consequatur sit inventore ipsa, architecto voluptates.</p>
+      <p class="studio__staff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestias necessitatibus corporis voluptate ipsum! Ex, nisi numquam impedit debitis ipsa distinctio sapiente nesciunt. Neque consequatur sit inventore</p>
 
-      <p class="studio__staff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestias necessitatibus corporis voluptate ipsum! Ex, nisi numquam impedit debitis ipsa distinctio sapiente nesciunt. Neque consequatur sit inventore ipsa, architecto voluptates.</p>
+      <p class="studio__staff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestias necessitatibus corporis voluptate ipsum! Ex, nisi numquam impedit debitis ipsa distinctio Sapiente</p>
+
+      <p class="studio__staff-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa molestias</p>
     </div>
 
     <!-- studio  persons -->
@@ -449,16 +451,20 @@
           <picture>
             <source media="(min-width: 1500px)"
                     srcset="src/img/person1-2x.jpg">
-              <img class="persons__img" src="src/img/person1.jpg" srcset="src/img/person1.jpg 1x,
-                                             src/img/person1-2.jpg 2x" alt="Phillipe Starck">
+                    <img class="persons__img" alt="Phillipe Starck"
+                   src="src/img/person1.jpg" 
+                   srcset="src/img/person1.jpg 1x,
+                   src/img/person1-2.jpg 2x" />
+              
           </picture>
+          
           <p class="persons__name">Phillipe Starck</p>
           <p class="persons__post">Designer</p>
           <div class="persons__info">
             <a href="#" class="persons__cv"><span>CV</span></a>
-          </div>
-          <!-- social -- icons  -->
-        <ul class="pesrons__social social">
+
+              <!-- social -- icons  -->
+        <ul class="persons__social social">
             <!-- facebook -->
             <li class="social__element">
                 <object type="image/svg+xml" data="src/img/fb.svg">
@@ -506,7 +512,8 @@
                       </svg>
                     </a>
                 </li>
-        </ul> <!-- .socials -->      
+        </ul> <!-- .socials -->   
+          </div>   
         </li>
 
         <!--  person  2  -->
@@ -521,9 +528,7 @@
           <p class="persons__post">Designer</p>
           <div class="persons__info">
             <a href="#" class="persons__cv"><span>CV</span></a>
-          </div>
-
-        <!-- social -- icons  -->
+            <!-- social -- icons  -->
         <ul class="pesrons__social social">
             <!-- facebook -->
             <li class="social__element">
@@ -572,7 +577,8 @@
                       </svg>
                     </a>
                 </li>
-        </ul> <!-- .socials -->      
+        </ul> <!-- .socials -->   
+          </div>   
         </li>
 
         <!--  person  3  -->
@@ -587,9 +593,7 @@
           <p class="persons__post">Designer</p>
           <div class="persons__info">
             <a href="#" class="persons__cv"><span>CV</span></a>
-          </div>
-
-          <!-- social -- icons  -->
+            <!-- social -- icons  -->
         <ul class="pesrons__social social">
             <!-- facebook -->
             <li class="social__element">
@@ -639,8 +643,68 @@
                     </a>
                 </li>
         </ul> <!-- .socials -->      
+          </div>
         </li> <!-- .persons__item -->
       </ul> <!-- .persons -->
+    </div>
+  </section>
+</div>
+
+<!--  SECTION  NEWS    -->
+<div class="container">
+  <section class="news">
+    <!-- news  left -->
+    <div class="news__left">
+      <div class="news__left">
+        <h2 class="news__title">News</h2>
+      </div>
+    </div>
+
+    <!-- news  right -->
+    <div class="news__right">
+        <ul class="news__list">
+          <!--  news  element  1 -->
+          <li class="news__element">
+            <p class="news__text">Mauris set due set justo placerat tristique.</p>
+            <time class="news__date" datetime="2014-07-11">11.07.2014</time>
+
+            <picture>
+                <source media="(min-width: 1500px)"
+                        srcset="src/img/news1-2x.jpg">
+                  <img class="news__image"
+                       src="src/img/news1.jpg" alt="Mauris set due set justo placerat tristique"
+                       srcset="src/img/news1.jpg 1x,
+                       src/img/news1-2x.jpg 2x">
+              </picture>
+              <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tempora eveniet. Voluptate atque sunt sit. Earum, necessitatibus magni at officia doloribus beatae maiores amet!</p>
+
+              <div class="news__href">
+                <a href="#" class="news__link">Read More</a>
+              </div>
+
+          </li>
+
+          <!--  news  element  2 -->
+          <li class="news__element">
+              <p class="news__text">Proin vehicula nibh massa</p>
+              <time class="news__date" datetime="2014-06-11">11.06.2014</time>
+  
+              <picture>
+                  <source media="(min-width: 1500px)"
+                          srcset="src/img/news2-2x.jpg">
+                    <img class="news__image"
+                         src="src/img/news1.jpg" alt="Proin vehicula nibh massa"
+                         srcset="src/img/news2.jpg 1x,
+                         src/img/news2-2x.jpg 2x">
+                </picture>
+                <p class="news__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, tempora eveniet. Voluptate atque sunt sit. Earum, necessitatibus magni at officia doloribus beatae maiores amet!</p>
+  
+                <div class="news__href">
+                  <a href="#" class="news__link">Read More</a>
+                </div>
+  
+            </li>
+        </ul>
     </div>
   </section>
 </div>
