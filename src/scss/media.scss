@@ -87,13 +87,68 @@
     .projects__element--ten .projects__subtitle {
          @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
     }
+
+    //  block studio 
+    .studio__title {
+         @include dynamicText(300%, 96, 48, 1500px, 3000, 1500);
+    }
+
+    .studio__text {
+        @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500);
+    }
+
+    .studio__subtitle {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+
+    .studio__list-item {
+        @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
+
+    .studio__staff-title {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+
+    .studio__staff-text {
+        @include dynamicText(87.5%, 28, 14, 1500px, 3000, 1500);
+    }
+
+    .persons__name {
+         @include dynamicText(81.25%, 26, 13, 1500px, 3000, 1500);
+    }
+
+    .persons__post {
+         @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
+
+    .persons__cv {
+         @include dynamicText(75%, 28, 14, 1500px, 3000, 1500);
+    }
 }
 
 
-/*   less  1200px     */
+/*   less  1300px     */
 @media screen and (max-width: 1300px) {
     .projects__element--one .projects__title {
         font-size: 38px;
+    }
+
+    .studio__right,
+    .studio__person {
+        padding-right: 2%;
+    }
+
+    .studio__title {
+        font-size: 40px;
+        margin-top: 70%;
+    }
+}
+
+/*   less  1100px     */
+@media screen and (max-width: 1100px) {
+    .studio__title {
+        font-size: 35px;
+        margin-top: 120%;
     }
 }
 
@@ -203,6 +258,26 @@
     .projects__element--ten {
         grid-column: span 7;
     }
+
+    ////////////  block  studio  /////////////
+    .studio__left,
+    .studio__right {
+        grid-column: span 16;
+    }
+
+    .studio__right {
+        padding-left: 2%;
+    }
+
+    .studio__title {
+        font-size: 48px;
+        margin: 12.3% 0 37.4% 17.2%;
+    }
+
+    .studio__staff {
+        padding-left: 2%;
+        padding-right: 3%;
+    }
 }
 
 
@@ -302,6 +377,27 @@
     .projects__element--eight .projects__like {
         margin-top: 5%; 
     }
+
+
+    ///////////  section  studio  //////////////
+    .studio__title {
+        margin: 8.3% 0 30.4% 17.2%;
+    }
+
+    .studio__right {
+        padding-top: 2%;
+    }
+
+    .studio__text,
+    .studio__staff-text {
+        margin: 3% 0;
+    }
+
+    .studio__staff,
+    .studio__person {
+        padding-top: 2%;
+    }
+    
 }
 
 /*   less  600px     */
@@ -418,6 +514,46 @@
     .projects__element--ten .projects__list {
         margin-left: calc(17.5% - 25px);
     }
+
+
+    ///////////  section  studio  //////////////
+    .studio {
+        grid-template-columns: 1fr;
+    } 
+
+    .studio__left, .studio__right, .studio__staff, .studio__person {
+        grid-column: span 1;
+    }
+
+    .studio__right {
+        display: block;
+    }
+
+    .studio__description, .studio__information {
+        width: 100%;
+    }
+
+    .studio__staff, .studio__right {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 5%;
+    }
+
+    .studio__person {
+        padding-right: 0;
+         padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .persons {
+        flex-direction: column;
+    }
+
+    .persons__item {
+        width: auto;
+        margin-right: 0;
+    }
+    
 }
 
 
