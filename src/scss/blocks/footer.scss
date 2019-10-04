@@ -6,7 +6,7 @@
 
     &__map {
         grid-column: span 8;
-        background-color: yellow;
+        filter: grayscale(.3);
     }
 
     &__info {

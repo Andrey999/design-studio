@@ -359,9 +359,10 @@
     .menu__list {
         min-width: auto;
         display: block;
-        padding-right: 70px;
+        padding-right: 100px;
         padding-top: 15px;
         overflow-y: auto;
+        height: 300px;
     }
 
     .menu__link {
@@ -452,10 +453,6 @@
     ///////////////  section   footer  ///////////////////
     .footer {
         grid-template-columns: 1fr;
-    }
-
-    .footer__map {
-        padding-bottom: 50%;
     }
 
     .footer__left {
@@ -690,7 +687,6 @@
     }
     
 }
-
 
 /*   less  479px     */
 @media screen and (max-width: 479px) {}

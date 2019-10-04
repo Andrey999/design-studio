@@ -711,7 +711,7 @@
 <!--    SECTION  FOOTER    -->
   <footer class="footer">
     <!-- footer  map -->
-    <div class="footer__map"></div>
+    <div id="map" class="footer__map"></div>
 
     <!--  footer  info   -->
     <div class="footer__info">
@@ -731,7 +731,7 @@
                     <p class="footer__slogan">assosiates<br>studio<br>design</p>
 
         <!-- social -- icons  -->
-        <ul class="header__social social">
+        <ul class="footer__social social">
           <!-- facebook -->
           <li class="social__element">
               <object type="image/svg+xml" data="src/img/fb.svg">
@@ -785,9 +785,48 @@
       <!-- copyright -->
       <p class="footer__copy">&copy; 2014 DSGN . All rights reserved - Designed by theuncreativelab.com</p>
     </div>
-
   </footer>
 
 <script src="build/js/all.js"></script>
+
+<!--     YANDEX     MAP      -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=055b9987-0302-4286-a84c-87a320d559d0&lang=ru_RU"
+  type="text/javascript">
+</script>
+
+<script type="text/javascript">
+ window.addEventListener('DOMContentLoaded', function() {
+  ymaps.ready(init);    
+//   .ymaps-layers-pane{
+//   filter: grayscale(100%);
+//   filter: url(/img/filters.svg#grayscale); /* Firefox 3.5+ */
+//   -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+// }
+    function init() { 
+        var myMap = new ymaps.Map("map", {
+            center: [33.734722, -118.211090],
+            zoom: 10
+        }); 
+
+        var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+            balloonContent: 'Это красивая метка'
+        }, {
+            // Опции.
+            // Необходимо указать данный тип макета.
+            iconLayout: 'default#image',
+            // Своё изображение иконки метки.
+            iconImageHref: 'src/img/marker.svg',
+            // Размеры метки.
+            iconImageSize: [45, 60],
+            // Смещение левого верхнего угла иконки относительно
+            // её "ножки" (точки привязки).
+            iconImageOffset: [33.764722, -118.211086]
+        })
+        
+        myMap.geoObjects.add(myPlacemark);
+  }
+ });
+</script>
 </body>
 </html>

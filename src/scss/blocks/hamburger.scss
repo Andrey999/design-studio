@@ -110,7 +110,7 @@
 
 .hamburger--active {
     z-index: 1;
-    border-color: $hoverTextColor;
+    border: 3px solid $hoverTextColor;
 
     &:hover {
         border-color: $hoverTextColor;
