@@ -1,0 +1,75 @@
+@import 'vars';
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+
+    &__map {
+        grid-column: span 8;
+        background-color: yellow;
+    }
+
+    &__info {
+        grid-column: span 8;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    //   footer  left
+    &__left {
+        margin-left: 15.3%;
+        margin-top: 20%;
+    }
+
+    &__logo {
+        display: block;
+        max-width: 100%;
+    }
+
+    &__slogan {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: $colorText;
+        margin-top: 5px;
+    }
+
+    &__adress,
+    &__contacts {
+        font-size: 13px;
+        color: $colorText;
+        line-height: 1.077;
+        text-transform: uppercase;
+    }
+
+    &__contacts {
+       margin-top: 10%;
+    }
+
+    &__tel,
+    &__email {
+        display: inline-block;
+        color: $colorText;
+        transition: color .5s;
+
+        &:hover {
+            color: $hoverTextColor;
+        }
+    }
+
+    //   footer   right
+    &__right {
+        margin-top: 20%;
+        margin-right: 15.9%;
+    }
+
+    &__copy {
+        width: 100%;
+        font-size: 12px;
+        line-height: 1.8;
+        color: $colorText;
+        text-align: center;
+        margin-top: 9%;
+        margin-bottom: 7%;
+    }
+}

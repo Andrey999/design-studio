@@ -58,9 +58,7 @@
     border: 3px solid $primaryColor;
     transition: border-color .5s; 
 
-    &:hover, 
-    &:active, 
-    &:focus {
+    &:hover {
         border-color: $hoverTextColor;
 
         .hamburger__element {
@@ -114,8 +112,7 @@
     z-index: 1;
     border-color: $hoverTextColor;
 
-    &:hover,
-    &:active {
+    &:hover {
         border-color: $hoverTextColor;
 
         .hamburger__element {

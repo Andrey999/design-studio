@@ -146,6 +146,20 @@
     .news__link {
         @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
     }
+
+    /////////////  section  footer  ///////////////
+     .footer__slogan {
+        @include dynamicText(112.5%, 36, 18, 1500px, 3000, 1500);
+    }
+
+    .footer__adress,
+    .footer__contacts {
+        @include dynamicText(81%, 26, 13, 1500px, 3000, 1500);
+    }
+
+    .footer__copy {
+         @include dynamicText(75%, 24, 12, 1500px, 3000, 1500);
+    }
 }
 
 
@@ -164,6 +178,11 @@
     .studio__title {
         font-size: 40px;
         margin-top: 70%;
+    }
+
+    //  footer  
+    .footer__right {
+        margin-right: 2%;
     }
 }
 
@@ -429,7 +448,25 @@
     .studio__person {
         padding-top: 2%;
     }
-    
+
+    ///////////////  section   footer  ///////////////////
+    .footer {
+        grid-template-columns: 1fr;
+    }
+
+    .footer__map {
+        padding-bottom: 50%;
+    }
+
+    .footer__left {
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+    .footer__right  {
+        margin-right: 5%;
+        margin-top: 10%;
+    }
 }
 
 /*   less  600px     */
@@ -621,6 +658,35 @@
     .news__text {
         font-size: 20px;
         min-height: auto;
+    }
+
+
+    //////////    section  footer   ///////////////
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .footer__left {
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 5%;
+    }
+
+    .footer__contacts {
+        margin-top: 7%;
+    }
+
+    .footer__right {
+        text-align: center;
+        margin-right: 0;
+    }
+
+    .footer__logo {
+        margin: auto;
+    }
+
+    .footer__social {
+        justify-content: center;
     }
     
 }
