@@ -706,7 +706,6 @@
   </section>
 </div>
 
-
 <!--    SECTION  FOOTER    -->
   <footer class="footer">
     <!-- footer  map -->
@@ -796,20 +795,15 @@
 <script type="text/javascript">
  window.addEventListener('DOMContentLoaded', function() {
   ymaps.ready(init);    
-//   .ymaps-layers-pane{
-//   filter: grayscale(100%);
-//   filter: url(/img/filters.svg#grayscale); /* Firefox 3.5+ */
-//   -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
-// }
     function init() { 
         var myMap = new ymaps.Map("map", {
-            center: [33.734722, -118.211090],
-            zoom: 10
+            center: [33.767387, -118.165996],
+            zoom: 12,
         }); 
 
         var myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
-            balloonContent: 'Это красивая метка'
+            hintContent: 'Long Beach',
+            balloonContent: '90802 CALIFORNIA <br> LONG BEACH <br> PO BOX 69789300 <br> EAST OCEAN BOULEVARD'
         }, {
             // Опции.
             // Необходимо указать данный тип макета.
@@ -817,13 +811,11 @@
             // Своё изображение иконки метки.
             iconImageHref: 'src/img/marker.svg',
             // Размеры метки.
-            iconImageSize: [45, 60],
-            // Смещение левого верхнего угла иконки относительно
-            // её "ножки" (точки привязки).
-            iconImageOffset: [33.764722, -118.211086]
+            iconImageSize: [45, 60]
         })
         
         myMap.geoObjects.add(myPlacemark);
+        myMap.behaviors.disable('scrollZoom');
   }
  });
  
