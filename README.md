@@ -1,2 +1,2 @@
-# Design-studio with Grid-css (test project)
+# Design-studio with Grid-css
 ### https://andrey999.github.io/design-studio/
